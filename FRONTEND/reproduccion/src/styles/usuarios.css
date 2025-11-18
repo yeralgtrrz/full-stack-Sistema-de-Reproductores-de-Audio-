@@ -1,0 +1,94 @@
+.pg-usuarios {
+  display: grid;
+  grid-template-areas: "menu content";
+  grid-template-columns: 1fr 5fr;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.menu-container {
+  grid-area: menu;
+}
+
+.container-body-usuarios {
+  grid-area: content;
+  background-image: url(../assets/descarga.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+  overflow-y: auto;
+}
+
+.container-body-usuarios h1 {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}
+
+.container-body-usuarios p {
+  color: #fff;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+
+.tabla-usuarios {
+  width: 90%;
+  border-collapse: collapse;
+  background: rgba(0,0,0,0.25);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+.tabla-usuarios th, .tabla-usuarios td {
+  padding: 12px 20px;
+  text-align: left;
+  color: #fff;
+  font-size: 1rem;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.tabla-usuarios th {
+  background: rgba(0,0,0,0.4);
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+
+.tabla-usuarios tr:hover {
+  background: rgba(255,255,255,0.1);
+  cursor: default;
+  transition: background 0.3s;
+}
+
+.container-body-usuarios::-webkit-scrollbar {
+  width: 10px;
+}
+
+.container-body-usuarios::-webkit-scrollbar-track {
+  background: rgba(255,255,255,0.05);
+  border-radius: 5px;
+}
+
+.container-body-usuarios::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.2);
+  border-radius: 5px;
+}
+
+.container-body-usuarios::-webkit-scrollbar-thumb:hover {
+  background: rgba(255,255,255,0.3);
+}
+
+.acciones-usuarios {
+  display: flex;
+  gap: 5px;
+}

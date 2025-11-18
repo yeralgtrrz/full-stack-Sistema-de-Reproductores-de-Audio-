@@ -1,0 +1,89 @@
+.pg-artistas {
+  display: grid;
+  grid-template-areas: "menu content";
+  grid-template-columns: 1fr 5fr;
+  height: 100vh;
+}
+
+.menu-container {
+  grid-area: menu;
+}
+
+.container-body-artistas {
+  grid-area: content;
+  background-image: url(../assets/descarga0.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+  overflow-y: auto;
+  color: #fff;
+}
+
+.container-body-artistas h1 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.tabla-artistas {
+  width: 80%;
+  border-collapse: collapse;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+  font-size: 1rem;
+}
+
+.tabla-artistas th,
+.tabla-artistas td {
+  text-align: center; 
+  padding: 12px 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.tabla-artistas th {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.tabla-artistas tr:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transition: background 0.3s ease;
+}
+
+.acciones-artistas {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.container-body-artistas::-webkit-scrollbar {
+  width: 10px;
+}
+
+.container-body-artistas::-webkit-scrollbar-track {
+  background: rgba(255,255,255,0.05);
+  border-radius: 5px;
+}
+
+.container-body-artistas::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.2);
+  border-radius: 5px;
+}
+
+.container-body-artistas::-webkit-scrollbar-thumb:hover {
+  background: rgba(255,255,255,0.3);
+}

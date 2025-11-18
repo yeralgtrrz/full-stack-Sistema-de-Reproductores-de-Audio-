@@ -1,0 +1,27 @@
+-------------------se deber restaurar la base de datos ------------
+nombre: proyecto1_bd2
+-------------------instalacion------------
+cd BACKEND
+python -m venv virtual_entorno           
+source virtual_entorno/Scripts/activate  
+pip install -r requirements.txt
+
+cd FRONTEND/reproduccion
+npm install
+--muy posiblemente se tenga q crear un superusuario para el backend de django
+
+-------------------activar el entorno------------------------------
+cd BACKEND
+"virtual_entorno\Scripts\activate" o "deactivate" ---un opcion activa y la otra descativa
+
+
+cd reproduccion
+python manage.py runserver     
+--------------------------------------------------------
+cd FRONTEND\reproduccion
+npm run dev
+----------------------git (consultas)----------------------------------
+git branch 
+git status
+git add .
+git commit -m "Guardando cambios"

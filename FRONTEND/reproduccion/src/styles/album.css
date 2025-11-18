@@ -1,0 +1,100 @@
+.pg-album {
+  display: grid;
+  grid-template-areas: "menu content";
+  grid-template-columns: 1fr 5fr;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.menu-container {
+  grid-area: menu;
+}
+
+.container-body-album {
+  grid-area: content;
+  background-image: url(../assets/descarga1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+  overflow-y: auto;
+}
+
+.container-body-album h1 {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}
+
+.table-container {
+  width: 100%;
+  max-width: 1200px;
+  overflow-x: auto;
+}
+
+.tabla-album {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(0,0,0,0.25);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+.tabla-album th,
+.tabla-album td {
+  padding: 12px 20px;
+  text-align: left;
+  color: #fff;
+  font-size: 1rem;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.tabla-album th {
+  background: rgba(0,0,0,0.4);
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+
+.tabla-album tr:hover {
+  background: rgba(255,255,255,0.1);
+  cursor: default;
+  transition: background 0.3s;
+}
+
+.album-controls {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem 0;
+}
+
+
+
+/* Estilos para la barra de desplazamiento */
+.container-body-album::-webkit-scrollbar {
+  width: 10px;
+}
+
+.container-body-album::-webkit-scrollbar-track {
+  background: rgba(255,255,255,0.05);
+  border-radius: 5px;
+}
+
+.container-body-album::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.2);
+  border-radius: 5px;
+}
+
+.container-body-album::-webkit-scrollbar-thumb:hover {
+  background: rgba(255,255,255,0.3);
+}

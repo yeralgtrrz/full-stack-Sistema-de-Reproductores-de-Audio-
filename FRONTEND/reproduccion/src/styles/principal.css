@@ -1,0 +1,85 @@
+.pg-principal {
+  display: grid;
+  grid-template-areas: "menu content";
+  grid-template-columns: 1fr 5fr;
+  height: 100vh;
+}
+
+.menu-container {
+  grid-area: menu;
+}
+
+.container-body-principal {
+  grid-area: content;
+  background-image: url(../assets/descarga2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+  overflow-y: auto;
+  color: #fff;
+}
+
+.container-body-principal h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+  text-align: center;
+}
+
+.tabla-principal {
+  width: 90%;
+  border-collapse: collapse;
+  background: rgba(0,0,0,0.25);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+.tabla-principal th,
+.tabla-principal td {
+  padding: 12px 20px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  color: #fff;
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+}
+
+.tabla-principal th {
+  background: rgba(0,0,0,0.4);
+  text-transform: uppercase;
+}
+
+.tabla-principal tr:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+.acciones-canciones {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.container-body-principal::-webkit-scrollbar {
+  width: 10px;
+}
+
+.container-body-principal::-webkit-scrollbar-track {
+  background: rgba(255,255,255,0.05);
+  border-radius: 5px;
+}
+
+.container-body-principal::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.2);
+  border-radius: 5px;
+}
+
+.container-body-principal::-webkit-scrollbar-thumb:hover {
+  background: rgba(255,255,255,0.3);
+}

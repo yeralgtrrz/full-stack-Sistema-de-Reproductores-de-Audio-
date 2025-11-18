@@ -1,0 +1,91 @@
+.pg-audios {
+  display: grid;
+  grid-template-areas: "menu content";
+  grid-template-columns: 1fr 5fr;
+  height: 100vh;
+}
+
+.menu-container {
+  grid-area: menu;
+}
+
+.container-body-audios {
+  grid-area: content;
+  background-image: url(../assets/descarga2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+  color: #fff;
+}
+
+.content-body-formulario-audios {
+  width: 50%;
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-body-formulario-audios form {
+  width: 100%;
+  border-radius: 12px;                             
+  padding: 2rem;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease, background 0.3s ease;      
+}
+
+.content-body-formulario-audios h1 {
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  padding-bottom: 0.5rem;
+}
+
+.content-body-formulario-audios input {
+  padding: 0.9rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.25);
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.content-body-formulario-audios input::placeholder {
+  color: #ddd;
+}
+
+.content-body-formulario-audios input:focus{
+  background: rgba(255,255,255,0.25);
+  transform: scale(1.02);
+}
+
+.content-body-formulario-audios button {
+  padding: 0.9rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: linear-gradient(90deg, #4e9cff, #367bff);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  align-self: flex-start;
+}
+
+.content-body-formulario-cancion,
+.content-body-formulario-podcast {
+  display: flex;           
+  flex-direction: column;  
+  align-items: center;     
+  justify-content: center; 
+}

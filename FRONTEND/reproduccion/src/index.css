@@ -1,0 +1,83 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  color-scheme: light dark;
+  color: rgb(0, 0, 0);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* ====== RESET GENERAL ====== */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Botones comunes */
+.btn-agregar {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #4CAF50, #45a049);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-agregar:hover {
+  background: linear-gradient(90deg, #45a049, #3d8b40);
+  transform: translateY(-2px);
+}
+
+.btn-editar {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4e9cff;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.btn-editar:hover {
+  background-color: #367bff;
+}
+
+.btn-eliminar {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff4e4e;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.btn-eliminar:hover {
+  background-color: #ff2e2e;
+}
+
+/* Botón común para agregar */
+.btn-agregar {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #4CAF50, #45a049);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-agregar:hover {
+  background: linear-gradient(90deg, #45a049, #3d8b40);
+  transform: translateY(-2px);
+}
+
